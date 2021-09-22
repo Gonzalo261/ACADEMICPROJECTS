@@ -1,0 +1,16 @@
+SMAP
+nuevoUsuario_jsp.java
+JSP
+*S JSP
+*F
++ 0 nuevoUsuario.jsp
+nuevoUsuario.jsp
++ 1 navbar.jsp
+navbar.jsp
+*L
+5,11:49
+1#1,78:60
+15#0,5:137
+20:142,3
+21,51:145
+*E
