@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Alta";
+}
+
+@model  FicticiaSA.Models.VMNuevoRegistro
+
+@if(Session["admin"] != null)
+{
+        <h2>Alta</h2>
+        <div class="row">
+            @using (Html.BeginForm())
+            {
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+
+
+                    <div class="form-group">
+                        <label>USUARIO</label>
+                        @Html.TextBoxFor(x => x.usuarioVM.name, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.usuarioVM.name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>PASSWORD</label>
+                        @Html.PasswordFor(x => x.usuarioVM.password, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.usuarioVM.password, "", new { @class = "text-danger" })
+                    </div><br><br>
+                    <div class="form-group">
+                        <label>NOMBRE COMPLETO</label>
+                        @Html.TextBoxFor(x => x.clienteVM.nombre, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.clienteVM.nombre, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label>DNI</label>
+                        @Html.TextBoxFor(x => x.clienteVM.dni, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.clienteVM.dni, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <label>EDAD</label>
+                        @Html.TextBoxFor(x => x.clienteVM.edad, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.clienteVM.edad, "", new { @class = "text-danger" })
+                    </div>
+                    }
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>GÉNERO</label>
+                        @Html.DropDownListFor(x => x.clienteVM.idGenero, new SelectList(Model.generoVM, "idGenero", "descripcion"), "SELECCIONE", htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>MANEJA</label>
+                        @Html.CheckBoxFor(x => x.clienteVM.maneja, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>USA LENTES</label>
+                        @Html.CheckBoxFor(x => x.clienteVM.usaLentes, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>ES DIABETICO?</label>
+                        @Html.CheckBoxFor(x => x.clienteVM.diabetico, htmlAttributes: new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>PADECE OTRA ENFERMEDAD? CUAL?</label>
+                        @Html.TextBoxFor(x => x.clienteVM.otraEnfermedad, htmlAttributes: new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.clienteVM.otraEnfermedad, "", new { @class = "text-danger" })
+                    </div>
+
+                    <input type="submit" value="Aceptar" class="btn btn-primary" />
+
+                </div>
+                <div class="col-md-2"></div>
+            }
+        </div>
+}
+else 
+{
+        <h2 style="color:red">Debe iniciar session</h2>
+}

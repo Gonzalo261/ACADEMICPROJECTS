@@ -1,0 +1,63 @@
+﻿
+@{
+    /**/
+
+    ViewBag.Title = "Mis Datos";
+}
+
+
+@model FicticiaSA.Models.DTOCliente
+
+
+@if (Session["usuario"] != null)
+{
+
+    <h2>Mis Datos</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>NOMBRE</th>
+            <th>DNI</th>
+            <th>EDAD</th>
+            <th>GENERO</th>
+            <th>MANEJA ? </th>
+            <th>USA LENTES ? </th>
+            <th>ES DIABÉTICO ? </th>
+            <th>PADECE OTRA ENFERMEDAD ? CUAL?</th>
+        </tr>
+        <tr>
+                <td>@Model.nombre</td>
+                <td>@Model.dni</td>
+                <td>@Model.edad</td>
+                <td>@Model.genero</td>
+
+                @if (Model.maneja)
+                {
+                    <td>Si</td> }
+                else
+                {
+                    <td>No</td>}
+                @if (Model.usaLentes)
+                {
+                    <td>Si</td> }
+                else
+                {
+                    <td>No</td>}
+                @if (Model.diabetico)
+                {
+                    <td>Si</td> }
+                else
+                {
+                    <td>No</td>}
+                <td>@Model.otraEnfermedad</td>
+                <td>
+                    <a href="/Cliente/Editar?idCliente=@Model.idCliente" class="btn btn-success">Editar</a>
+                    <a href="/Cliente/EliminarUsuario?idCliente=@Model.idCliente" class="btn btn-warning">Eliminar</a>
+                </td>
+            </tr>
+    </table>
+
+}
+else
+{
+    <h2 style="color:red">Debe iniciar session</h2>
+}
