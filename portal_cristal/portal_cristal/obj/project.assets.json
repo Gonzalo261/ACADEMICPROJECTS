@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonza\\source\\repos\\portal_cristal\\portal_cristal\\portal_cristal.csproj",
+      "projectUniqueName": "C:\\Users\\gonza\\Documents\\ACADEMICPROJECTS\\portal_cristal\\portal_cristal\\portal_cristal.csproj",
       "projectName": "portal_cristal",
-      "projectPath": "C:\\Users\\gonza\\source\\repos\\portal_cristal\\portal_cristal\\portal_cristal.csproj",
+      "projectPath": "C:\\Users\\gonza\\Documents\\ACADEMICPROJECTS\\portal_cristal\\portal_cristal\\portal_cristal.csproj",
       "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonza\\source\\repos\\portal_cristal\\portal_cristal\\obj\\",
+      "outputPath": "C:\\Users\\gonza\\Documents\\ACADEMICPROJECTS\\portal_cristal\\portal_cristal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
