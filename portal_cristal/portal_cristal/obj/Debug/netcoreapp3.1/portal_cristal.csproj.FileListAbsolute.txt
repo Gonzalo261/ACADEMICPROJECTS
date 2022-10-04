@@ -36,3 +36,4 @@ C:\Users\gonza\Documents\ACADEMICPROJECTS\portal_cristal\portal_cristal\obj\Debu
 C:\Users\gonza\Documents\ACADEMICPROJECTS\portal_cristal\portal_cristal\obj\Debug\netcoreapp3.1\portal_cristal.pdb
 C:\Users\gonza\Documents\ACADEMICPROJECTS\portal_cristal\portal_cristal\obj\Debug\netcoreapp3.1\portal_cristal.genruntimeconfig.cache
 C:\Users\gonza\Documents\ACADEMICPROJECTS\portal_cristal\portal_cristal\obj\Debug\netcoreapp3.1\portal_cristal.csproj.CopyComplete
+C:\Users\gonza\Documents\ACADEMICPROJECTS\portal_cristal\portal_cristal\obj\Debug\netcoreapp3.1\Razor\PruebaCambios\_ViewImports.cshtml.g.cs

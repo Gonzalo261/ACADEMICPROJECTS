@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/SESdcXnWPYZ5LqC+0lYbdZcrTPJ4t8DIpUTvc5ollTedZcrD/q2lyikoLMHx839wA/hqkVD3eGUNgkkixnp5w==",
+  "dgSpecHash": "FYwBzgnZ3CHQm3Rj0sRUw1WO3zFLInP0HLPNn6nt77YPvO25Nhya8XPozuu8xhX2C+S4zbs9i0AlIPhmrccuAw==",
   "success": true,
   "projectFilePath": "C:\\Users\\gonza\\Documents\\ACADEMICPROJECTS\\portal_cristal\\portal_cristal\\portal_cristal.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gonza\\.nuget\\packages\\microsoft.typescript.msbuild\\4.8.3\\microsoft.typescript.msbuild.4.8.3.nupkg.sha512"
+  ],
   "logs": []
 }
